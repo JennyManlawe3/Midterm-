@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Survey Form built for my Laboratory Exam, using HTML and CSS.">
+          <title>Our Laboratory Exam</title>
+            <link rel="stylesheet" href="survey.css">
+        </head>
+  
+  <body>
+          <h1 id="title"><center>Survey Form</center></h1>
+              <center><img src="dolores.jpg" alt="Dolores" width="1500" height="870"></center>
+              <br>
+            <center><caption class="bottom-center">Dolores Of Eastern Samar Guiuan</caption></center>
+          
+    
+      <fieldset>
+        <label for="name" id="name-label">Name</label> 
+
+        <input class="box" id="name" type="text" name="name" placeholder="Enter your name" required>
+
+                <br><br>
+        
+        <label for="email" id="email-label">Email</label>
+        <input class="box" id="email" type="email" name="email" placeholder="Enter your Email" required>
+                <br><br>
+        <label for="number" id="number-label">Age(optional)</label> 
+        <input class="box" id="number" type="number" name="age" placeholder="Age" min="13" max="120" >
+
+                <br><br>
+
+        <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+              <select class="box" id="dropdown">
+                    <option>Select current role</option>
+                    <option>Student</option>
+                    <option>Full Time Worker</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+              </select>  
+                <br><br>
+        <label for="radio" id="radio-label">Would you recommend our service to a customer?</label>
+              <div>
+        <label for="definitely"><input type="radio" id="definitely" name="definitely-maybe-notsure" value="1" checked> Definitely</label>
+        <label for="maybe"><input type="radio" id="maybe" name="definitely-maybe-notsure" value="2"> Maybe</label>
+        <label for="notsure"><input type="radio" id="notsure" name="definitely-maybe-notsure" value="3"> Not sure</label>
+        </div>
+                <br><br>
+        <label for="comment" id="comment-label">We are happy to hear your comments </label><br>
+        <textarea class="box large" id="comment" name="comment" rows="8" cols="10" placeholder="Enter your text here" ></textarea>
+                    <br>
+      <button class="box" type="submit" id="submit" name="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
